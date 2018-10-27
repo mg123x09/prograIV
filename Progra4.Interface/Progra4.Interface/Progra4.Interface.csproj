@@ -78,5 +78,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Progra4.Interface.LogicaNegocio\Progra4.Interface.LogicaNegocio.csproj">
+      <Project>{a3957af0-d882-4b28-bd22-b497672f248c}</Project>
+      <Name>Progra4.Interface.LogicaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

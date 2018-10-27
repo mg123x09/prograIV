@@ -1,6 +1,6 @@
 ﻿namespace Progra4.Interface
 {
-    partial class Form1
+    partial class frmInvocaWCF
     {
         /// <summary>
         /// Required designer variable.
@@ -42,7 +42,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(229, 45);
+            this.label1.Location = new System.Drawing.Point(115, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 13);
             this.label1.TabIndex = 0;
@@ -52,7 +52,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(232, 83);
+            this.label2.Location = new System.Drawing.Point(118, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 1;
@@ -61,7 +61,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(235, 127);
+            this.label3.Location = new System.Drawing.Point(121, 123);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 2;
@@ -70,7 +70,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(238, 161);
+            this.label4.Location = new System.Drawing.Point(124, 157);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 13);
             this.label4.TabIndex = 3;
@@ -78,46 +78,47 @@
             // 
             // txtM1
             // 
-            this.txtM1.Location = new System.Drawing.Point(292, 45);
+            this.txtM1.Location = new System.Drawing.Point(178, 41);
             this.txtM1.Name = "txtM1";
             this.txtM1.Size = new System.Drawing.Size(100, 20);
             this.txtM1.TabIndex = 4;
             // 
             // txtM2
             // 
-            this.txtM2.Location = new System.Drawing.Point(295, 83);
+            this.txtM2.Location = new System.Drawing.Point(181, 79);
             this.txtM2.Name = "txtM2";
             this.txtM2.Size = new System.Drawing.Size(100, 20);
             this.txtM2.TabIndex = 5;
             // 
             // txtS1
             // 
-            this.txtS1.Location = new System.Drawing.Point(295, 127);
+            this.txtS1.Location = new System.Drawing.Point(181, 123);
             this.txtS1.Name = "txtS1";
             this.txtS1.Size = new System.Drawing.Size(100, 20);
             this.txtS1.TabIndex = 6;
             // 
             // txtS2
             // 
-            this.txtS2.Location = new System.Drawing.Point(295, 161);
+            this.txtS2.Location = new System.Drawing.Point(181, 157);
             this.txtS2.Name = "txtS2";
             this.txtS2.Size = new System.Drawing.Size(100, 20);
             this.txtS2.TabIndex = 7;
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(251, 220);
+            this.btnOK.Location = new System.Drawing.Point(137, 216);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 8;
             this.btnOK.Text = "ok";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
-            // Form1
+            // frmInvocaWCF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(514, 318);
+            this.ClientSize = new System.Drawing.Size(379, 318);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.txtS2);
             this.Controls.Add(this.txtS1);
@@ -127,8 +128,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmInvocaWCF";
+            this.Text = "form invoca wcf";
             this.ResumeLayout(false);
             this.PerformLayout();
 

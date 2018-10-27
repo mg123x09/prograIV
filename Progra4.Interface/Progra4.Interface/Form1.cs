@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Progra4.Interface
 {
-    public partial class Form1 : Form
+    public partial class frmInvocaWCF : Form
     {
-        public Form1()
+        public frmInvocaWCF()
         {
             InitializeComponent();
         }
@@ -20,6 +20,17 @@ namespace Progra4.Interface
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+
+            /*Esto es un ejemplo de la filmina 16*/
+            var elCalculo = new Progra4.Interface.LogicaNegocio.EjemploCalculos();
+            var  elPrimerCalculo = (Progra4.Interface.LogicaNegocio.IEjemploCalculos)elCalculo;
+            btnOK.Text = elPrimerCalculo.Show();
+            var elSegundoCalculo = (Progra4.Interface.LogicaNegocio.IEjemploCalculosDos)elCalculo;
+            btnOK.Text = elSegundoCalculo.Show();
         }
     }
 }
