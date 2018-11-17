@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="337293d0c07a4af7b597fce8142b78db" Name="Diagram1">
+        <EntityTypeShape EntityType="AdventureWorks2016Model.Product" Width="2" PointX="3" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2016Model.ProductCategory" Width="1.5" PointX="4" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2016Model.ProductModel" Width="1.5" PointX="0.5" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2016Model.ProductProductPhoto" Width="2.375" PointX="5.875" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2016Model.ProductReview" Width="2.75" PointX="6.875" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2016Model.ProductSubcategory" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="AdventureWorks2016Model.UnitMeasure" Width="1.625" PointX="0.5" PointY="5.625" IsExpanded="true" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_Product_ProductModel_ProductModelID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_Product_ProductSubcategory_ProductSubcategoryID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_Product_UnitMeasure_SizeUnitMeasureCode" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_Product_UnitMeasure_WeightUnitMeasureCode" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_ProductProductPhoto_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_ProductReview_Product_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="AdventureWorks2016Model.FK_ProductSubcategory_ProductCategory_ProductCategoryID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
