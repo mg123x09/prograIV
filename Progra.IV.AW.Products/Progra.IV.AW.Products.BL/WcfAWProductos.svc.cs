@@ -10,7 +10,7 @@ namespace Progra.IV.AW.Products.BL
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
-    public class WcfAWPrdouctos : IAWProductos
+    public class WcfAWProductos : IAWProductos
     {
         public string GetData(int value)
         {
@@ -30,17 +30,36 @@ namespace Progra.IV.AW.Products.BL
             return composite;
         }
 
-        public IList<Model.Product> ListarProductorPorColor(string Elcolor)
+        public IList<Class.Product> ListarProductoPorColor(string elColor)
+        {
+           var elRepositorio = new Repositorio.Productos();
+            var elResultado = elRepositorio.ListarProductoPorColor(elColor);
+            return (elResultado);
+        }
+
+        
+
+        public IList<Class.Product> ListarProductosPorNombreDeCategoria(string laCategoria)
         {
             throw new NotImplementedException();
         }
 
-        public IList<Model.Product> ListarProductosPorNombreDeCategoria(string laCategoria)
+        public IList<Class.Product> ListarProductosPorRangoDePrecio(decimal precioInferior, decimal precioSuperior)
         {
             throw new NotImplementedException();
         }
 
-        public IList<Model.Product> ListarProductosPorRangoDePrecio(decimal precioInferior, decimal precioSuperior)
+          IList<Class.Product> IAWProductos.ListarProductorPorColor(string Elcolor)
+        {
+            throw new NotImplementedException();
+        }
+
+         IList<Class.Product> IAWProductos.ListarProductosPorNombreDeCategoria(string laCategoria)
+        {
+            throw new NotImplementedException();
+        }
+
+     IList<Class.Product> IAWProductos.ListarProductosPorRangoDePrecio(decimal precioInferior, decimal precioSuperior)
         {
             throw new NotImplementedException();
         }

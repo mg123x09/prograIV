@@ -22,14 +22,14 @@ namespace Progra.IV.AW.Products.BL
         // TODO: Add your service operations here
 
         [OperationContract]/*para os metodos de la clase*/
-         IList<Model.Product>ListarProductosPorRangoDePrecio(decimal precioInferior, decimal precioSuperior);
+         IList<Class.Product>ListarProductosPorRangoDePrecio(decimal precioInferior, decimal precioSuperior);
 
 
         [OperationContract]/*para os metodos de la clase*/
-        IList<Model.Product> ListarProductorPorColor(string Elcolor);
+        IList<Class.Product> ListarProductorPorColor(string Elcolor);
 
         [OperationContract]/*para os metodos de la clase*/
-        IList<Model.Product> ListarProductosPorNombreDeCategoria(string laCategoria);
+        IList<Class.Product> ListarProductosPorNombreDeCategoria(string laCategoria);
         
 
 
