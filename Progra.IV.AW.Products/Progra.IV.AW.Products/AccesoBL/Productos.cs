@@ -17,5 +17,17 @@ namespace Progra.IV.AW.Products.AccesoBL
             elClienteWcf.Close();
             return elResultado;
     }
+
+
+
+        public IList<Class.ComboDeProductos> ListarIdYNombreDeProductoPorColor(string elColor)
+        {
+
+
+            var elClienteWcf = new SI.WcfProductos.AWProductosClient();
+            var elResultado = elClienteWcf.ListarIdYNombreDeProductoPorColor(elColor);
+            elClienteWcf.Close();
+            return elResultado;
+        }
     }
 }

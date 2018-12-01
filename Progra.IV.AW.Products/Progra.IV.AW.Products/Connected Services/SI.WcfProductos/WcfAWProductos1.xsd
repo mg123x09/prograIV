@@ -73,4 +73,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="ListarIdYNombreDeProductoPorColor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Elcolor" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListarIdYNombreDeProductoPorColorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/Progra.IV.AW.Products.Class" minOccurs="0" name="ListarIdYNombreDeProductoPorColorResult" nillable="true" type="q6:ArrayOfComboDeProductos" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

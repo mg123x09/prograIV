@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
+using Progra.IV.AW.Products.Class;
 
 namespace Progra.IV.AW.Products.BL
 {
@@ -28,6 +29,13 @@ namespace Progra.IV.AW.Products.BL
                 composite.StringValue += "Suffix";
             }
             return composite;
+        }
+
+        public IList<ComboDeProductos> ListarIdYNombreDeProductoPorColor(string elColor)
+        {
+            var elRepositorio = new Repositorio.Productos();
+            var elResultado = elRepositorio.ListarIdYNombreDeProductoPorColor(elColor);
+            return (elResultado);
         }
 
         public IList<Class.Product> ListarProductoPorColor(string elColor)

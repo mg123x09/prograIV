@@ -130,4 +130,17 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="UnitMeasure" nillable="true" type="tns:UnitMeasure" />
+  <xs:complexType name="ArrayOfComboDeProductos">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ComboDeProductos" nillable="true" type="tns:ComboDeProductos" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfComboDeProductos" nillable="true" type="tns:ArrayOfComboDeProductos" />
+  <xs:complexType name="ComboDeProductos">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NombreProducto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idProducto" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ComboDeProductos" nillable="true" type="tns:ComboDeProductos" />
 </xs:schema>

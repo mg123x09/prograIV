@@ -38,6 +38,12 @@
   <wsdl:message name="IAWProductos_ListarProductosPorNombreDeCategoria_OutputMessage">
     <wsdl:part name="parameters" element="tns:ListarProductosPorNombreDeCategoriaResponse" />
   </wsdl:message>
+  <wsdl:message name="IAWProductos_ListarIdYNombreDeProductoPorColor_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarIdYNombreDeProductoPorColor" />
+  </wsdl:message>
+  <wsdl:message name="IAWProductos_ListarIdYNombreDeProductoPorColor_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarIdYNombreDeProductoPorColorResponse" />
+  </wsdl:message>
   <wsdl:portType name="IAWProductos">
     <wsdl:operation name="GetData">
       <wsdl:input wsaw:Action="http://tempuri.org/IAWProductos/GetData" message="tns:IAWProductos_GetData_InputMessage" />
@@ -58,6 +64,10 @@
     <wsdl:operation name="ListarProductosPorNombreDeCategoria">
       <wsdl:input wsaw:Action="http://tempuri.org/IAWProductos/ListarProductosPorNombreDeCategoria" message="tns:IAWProductos_ListarProductosPorNombreDeCategoria_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IAWProductos/ListarProductosPorNombreDeCategoriaResponse" message="tns:IAWProductos_ListarProductosPorNombreDeCategoria_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarIdYNombreDeProductoPorColor">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAWProductos/ListarIdYNombreDeProductoPorColor" message="tns:IAWProductos_ListarIdYNombreDeProductoPorColor_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAWProductos/ListarIdYNombreDeProductoPorColorResponse" message="tns:IAWProductos_ListarIdYNombreDeProductoPorColor_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IAWProductos" type="tns:IAWProductos">
@@ -100,6 +110,15 @@
     </wsdl:operation>
     <wsdl:operation name="ListarProductosPorNombreDeCategoria">
       <soap:operation soapAction="http://tempuri.org/IAWProductos/ListarProductosPorNombreDeCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarIdYNombreDeProductoPorColor">
+      <soap:operation soapAction="http://tempuri.org/IAWProductos/ListarIdYNombreDeProductoPorColor" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

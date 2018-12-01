@@ -107,6 +107,12 @@ namespace Progra.IV.AW.Products.SI.WcfProductos {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAWProductos/ListarProductosPorNombreDeCategoria", ReplyAction="http://tempuri.org/IAWProductos/ListarProductosPorNombreDeCategoriaResponse")]
         System.Threading.Tasks.Task<Progra.IV.AW.Products.Class.Product[]> ListarProductosPorNombreDeCategoriaAsync(string laCategoria);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAWProductos/ListarIdYNombreDeProductoPorColor", ReplyAction="http://tempuri.org/IAWProductos/ListarIdYNombreDeProductoPorColorResponse")]
+        Progra.IV.AW.Products.Class.ComboDeProductos[] ListarIdYNombreDeProductoPorColor(string Elcolor);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAWProductos/ListarIdYNombreDeProductoPorColor", ReplyAction="http://tempuri.org/IAWProductos/ListarIdYNombreDeProductoPorColorResponse")]
+        System.Threading.Tasks.Task<Progra.IV.AW.Products.Class.ComboDeProductos[]> ListarIdYNombreDeProductoPorColorAsync(string Elcolor);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -174,6 +180,14 @@ namespace Progra.IV.AW.Products.SI.WcfProductos {
         
         public System.Threading.Tasks.Task<Progra.IV.AW.Products.Class.Product[]> ListarProductosPorNombreDeCategoriaAsync(string laCategoria) {
             return base.Channel.ListarProductosPorNombreDeCategoriaAsync(laCategoria);
+        }
+        
+        public Progra.IV.AW.Products.Class.ComboDeProductos[] ListarIdYNombreDeProductoPorColor(string Elcolor) {
+            return base.Channel.ListarIdYNombreDeProductoPorColor(Elcolor);
+        }
+        
+        public System.Threading.Tasks.Task<Progra.IV.AW.Products.Class.ComboDeProductos[]> ListarIdYNombreDeProductoPorColorAsync(string Elcolor) {
+            return base.Channel.ListarIdYNombreDeProductoPorColorAsync(Elcolor);
         }
     }
 }

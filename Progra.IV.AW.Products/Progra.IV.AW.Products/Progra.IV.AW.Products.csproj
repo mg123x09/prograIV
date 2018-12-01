@@ -89,6 +89,7 @@
     <None Include="Connected Services\SI.WcfProductos\WcfAWProductos3.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Properties\DataSources\Progra.IV.AW.Products.Class.ComboDeProductos.datasource" />
     <None Include="Properties\DataSources\Progra.IV.AW.Products.Class.Product.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

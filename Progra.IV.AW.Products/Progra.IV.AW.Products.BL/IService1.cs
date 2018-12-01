@@ -12,6 +12,7 @@ namespace Progra.IV.AW.Products.BL
     [ServiceContract]/*Par la clase*/
     public interface IAWProductos
     {
+       
 
         [OperationContract]/*Calificador se publican por un DNRY*/
         string GetData(int value); /*RECIBE UN INT DEVUELVE UN STRING*/
@@ -30,7 +31,9 @@ namespace Progra.IV.AW.Products.BL
 
         [OperationContract]/*para os metodos de la clase*/
         IList<Class.Product> ListarProductosPorNombreDeCategoria(string laCategoria);
-        
+
+        [OperationContract]
+        IList<Class.ComboDeProductos> ListarIdYNombreDeProductoPorColor(string Elcolor);
 
 
 
